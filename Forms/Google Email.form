@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note class='form' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='85257818000B8E8F'>
+<noteinfo noteid='25e' unid='976257AE027E1B5B85257818006847CA' sequence='10'>
+<created><datetime>20110114T135901,22-05</datetime></created>
+<modified><datetime>20110220T133304,24-05</datetime></modified>
+<revised><datetime>20110220T133304,23-05</datetime></revised>
+<lastaccessed><datetime>20110220T133304,24-05</datetime></lastaccessed>
+<addedtofile><datetime>20110114T135901,20-05</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Declan Sciolla-Lynch/O=Imagination</name></updatedby>
+<wassignedby><name>CN=Declan Sciolla-Lynch/O=Imagination</name></wassignedby>
+<item name='qiRequestedOn' summary='false' sign='true'>
+<rawitemdata type='400'>
+AAAAAAAAAAA=
+</rawitemdata></item>
+<item name='qiInitiatedOn' summary='false' sign='true'>
+<rawitemdata type='400'>
+AAAAAAAAAAA=
+</rawitemdata></item>
+<item name='ciCreatedOn' summary='false' sign='true'>
+<rawitemdata type='400'>
+AAAAAAAAAAA=
+</rawitemdata></item>
+<item name='caCreatedOn' summary='false' sign='true'>
+<rawitemdata type='400'>
+AAAAAAAAAAA=
+</rawitemdata></item>
+<item name='kwCreatedOn' summary='false' sign='true'>
+<rawitemdata type='400'>
+AAAAAAAAAAA=
+</rawitemdata></item>
+<item name='npCreatedOn' summary='false' sign='true'>
+<rawitemdata type='400'>
+AAAAAAAAAAA=
+</rawitemdata></item>
+<item name='$Fonts'>
+<rawitemdata type='1'>
+i/8oAAEABRZHZW9yZ2lhAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+</rawitemdata></item>
+<item name='$HTMLCode' sign='true'>
+<rawitemdata type='1'>
+X/8QAAIADwAHAAAAAAAAAA==
+</rawitemdata></item>
+<item name='$TITLE'><textlist><text>Google Email</text><text>Memo</text></textlist></item>
+<item name='$Info' sign='true'>
+<rawitemdata type='1'>
+hhgBAIAAAAAAgAAAAQABAP///wAQAAAA
+</rawitemdata></item>
+<item name='$WindowTitle' sign='true'><formula>"Google Email - " + Subject</formula></item>
+<item name='$Flags'><text>C</text></item>
+<item name='$WebFlags' sign='true'><text>F</text></item>
+<item name='$ConflictAction' sign='true'><text>1</text></item>
+<item name='$$ScriptName' summary='false' sign='true'><text> Memo</text></item>
+<item name='From' placeholder='true'>
+<rawitemdata type='0'>
+</rawitemdata></item>
+<item name='DeliveredDate' summary='false' sign='true'>
+<rawitemdata type='400'>
+AAAAAAAAAAA=
+</rawitemdata></item>
+<item name='Subject' placeholder='true'>
+<rawitemdata type='0'>
+</rawitemdata></item>
+<item name='Body' placeholder='true'>
+<rawitemdata type='0'>
+</rawitemdata></item>
+<item name='geAlertProcessed' placeholder='true'>
+<rawitemdata type='0'>
+</rawitemdata></item>
+<item name='geVerificationProcessed' placeholder='true'>
+<rawitemdata type='0'>
+</rawitemdata></item>
+<item name='geHTMLResponse' placeholder='true'>
+<rawitemdata type='0'>
+</rawitemdata></item>
+<item name='geSearchTerm' placeholder='true'>
+<rawitemdata type='0'>
+</rawitemdata></item>
+<item name='$Fields'><textlist><text>geSearchTerm</text><text>geHTMLResponse</text><text
+>geVerificationProcessed</text><text>geAlertProcessed</text><text>Body</text><text
+>Subject</text><text>DeliveredDate</text><text>From</text></textlist></item>
+<item name='$Body' sign='true'>
+<rawitemdata type='1'>
+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
+</rawitemdata></item>
+<item name='$V5ACTIONS' sign='true'>
+<rawitemdata type='1'>
+i/8oAAEABRZHZW9yZ2lhAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL0cAQAAAAIAAQAAAIEAAAAA
+AAAABQAACQgAAgB5/2wAAQD///8AAQAAAAAAAQAAAAAAAQD///8AAQAfAAAAAAAAAAAAAwAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAD8/zoAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA
+AAAAAAAAvv8mAAAABQAAAJ0BAAALAAAAAAAAAENhdGVnb3JpX3plAAEATny+/ygAAAAFAAAAnQEA
+AA4AAAAAAAAAX0VkaXQgRG9jdW1lbnQCAAIKvv8oAAAABQAAAJ0BAAAOAAAAAAAAAFNlbmQgRG9j
+dV9tZW50AwADCr7/IgAAAAUAAACdAQAACAAAAAAAAABfRm9yd2FyZAQABAq+/ywAAAAFAAAAnQEA
+ABIAAAAAAAAAX01vdmUgVG8gRm9sZGVyLi4uBQA9fL7/LgAAAAUAAACdAQAAEwAAAAAAAABfUmVt
+b3ZlIEZyb20gRm9sZGVyAAYAPnw=
+</rawitemdata></item>
+<item name='$ACTIONS' sign='true'>
+<rawitemdata type='1'>
+vRwBAAAAAgABAAAAgQAAAAAAAACcAAAJCAACAL7/JgAAAAUAAACdAQAACwAAAAAAAABDYXRlZ29y
+aV96ZQABAE58vv8oAAAABQAAAJ0BAAAOAAAAAAAAAF9FZGl0IERvY3VtZW50AgACCr7/KAAAAAUA
+AACdAQAADgAAAAAAAABTZW5kIERvY3VfbWVudAMAAwq+/yIAAAAFAAAAnQEAAAgAAAAAAAAAX0Zv
+cndhcmQEAAQKvv8sAAAABQAAAJ0BAAASAAAAAAAAAF9Nb3ZlIFRvIEZvbGRlci4uLgUAPXy+/y4A
+AAAFAAAAnQEAABMAAAAAAAAAX1JlbW92ZSBGcm9tIEZvbGRlcnoGAD58
+</rawitemdata></item>
+<item name='$Comment' sign='true'><text>iWatch V2.0.0</text></item>
+<item name='$DesignerVersion' sign='true'><text>8.5.3</text></item></note>
+

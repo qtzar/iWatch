@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note class='form' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='85257818000B8E8F'>
+<noteinfo noteid='16e' unid='6D77067457B9FE1E85257818000BAC24' sequence='5'>
+<created><datetime>20110113T210729,64-05</datetime></created>
+<modified><datetime>20110220T133245,44-05</datetime></modified>
+<revised><datetime>20110220T133245,43-05</datetime></revised>
+<lastaccessed><datetime>20110220T133245,44-05</datetime></lastaccessed>
+<addedtofile><datetime>20110113T210729,84-05</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Declan Sciolla-Lynch/O=Imagination</name></updatedby>
+<wassignedby><name>CN=Declan Sciolla-Lynch/O=Imagination</name></wassignedby>
+<item name='$TITLE'><text>$DBIcon</text></item>
+<item name='$Flags'><text>34Ci~Q</text></item>
+<item name='$ImagesWide' sign='true'><number>1</number></item>
+<item name='$ImagesHigh' sign='true'><number>1</number></item>
+<item name='$ImagesColorize' sign='true'><number>0</number></item>
+<item name='$FileSize' sign='true'><number>1904</number></item>
+<item name='$ImageData' sign='true'>
+<rawitemdata type='1'>
+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
+</rawitemdata></item>
+<item name='$FileModDT' sign='true'><datetime>20110113T205947,00-05</datetime></item>
+<item name='$ImageNames' sign='true'><text>Y:\Desktop\favicon.png</text></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item></note>
+

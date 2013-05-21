@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom" xmlns:xe="http://www.ibm.com/xsp/coreex">
+	<xp:panel styleClass="lotusFrame">
+		<xc:layout_Banner />
+		<xc:layout_TitleBar />
+		<xc:layout_PlaceBar />
+		<xp:panel styleClass="lotusMain">
+			<xc:layout_Sidebar />
+			<xp:panel styleClass="lotusContent">
+				<xe:formTable id="formTable1" formTitle="Problem Detected"
+					formDescription="The URL that you followed is not valid. This could indicate that the files you were trying to download have expired and are no longer available.">
+				</xe:formTable>
+			</xp:panel>
+		</xp:panel>
+		<xc:layout_Footer />
+	</xp:panel>
+</xp:view>

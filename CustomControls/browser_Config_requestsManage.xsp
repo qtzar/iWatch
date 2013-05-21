@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom" xmlns:xe="http://www.ibm.com/xsp/coreex">
+	<xp:this.data>
+		<xp:dominoView var="requestsView" viewName="lkp_Requests_Waiting" />
+	</xp:this.data>
+	<xp:panel styleClass="lotusFrame">
+		<xc:layout_Banner />
+		<xc:layout_TitleBar />
+		<xc:layout_PlaceBar />
+		<xp:panel styleClass="lotusMain">
+			<xc:layout_Sidebar_Config />
+			<xp:panel styleClass="lotusContent">
+				<xp:panel styleClass="lotusMessage lotusInfo">
+					There are currently no requests waiting for approval.
+					<xp:this.rendered><![CDATA[#{javascript:var testValue = getComponent("repeat1");
+if (testValue.getRowCount() == 0 ){
+	return true;
+} else{
+	return false;
+}}]]></xp:this.rendered>
+				</xp:panel>
+				<xp:repeat id="repeat1" rows="30" value="#{requestsView}" var="requestsVar" indexVar="requestsIndx">
+					<xp:this.facets>
+						<xp:text key="header" escape="false" id="computedField2">
+							<xp:this.value><![CDATA[<table width="100%" class="lotusTable">
+<thead>
+<tr class="lotusFirst">
+<th style="width:90px;" class="lotusRowHeader lotusFirstCell"></th>
+<th style="width:90px;"></th>
+<th><b>Requestor</b></th>
+<th><b>Search Terms</b></th>
+<th><b>Type</b></th>
+<th><b>Frequency</b></th>
+<th><b>Volume</b></th>
+
+</tr>
+</thead>
+<tbody>
+]]></xp:this.value>
+						</xp:text>
+						<xp:text key="footer" escape="false" id="computedField3">
+							<xp:this.value><![CDATA[</tbody></table>]]></xp:this.value>
+						</xp:text>
+					</xp:this.facets>
+					<xp:this.rendered><![CDATA[#{javascript:var testValue = getComponent("repeat1");
+if (testValue.getRowCount() == 0 ){
+	return false;
+} else{
+	return true;
+}}]]></xp:this.rendered>
+					<xp:tr>
+						<xp:td styleClass="lotusFirstCell">
+							<xp:link escape="true" text="Approve" id="link1" outerStyleClass="lotusBtn">
+								<xp:eventHandler event="onclick" submit="true" refreshMode="complete">
+									<xp:this.action><![CDATA[#{javascript:var tempDoc:NotesDocument = requestsVar.getDocument();
+try {
+	var googleURL:java.net.URL = new java.net.URL("http://www.google.com/alerts/create");
+
+	var content = "q=" + java.net.URLEncoder.encode(tempDoc.getItemValueString("requestSearchTerms"));
+	content = content + "&f=" + java.net.URLEncoder.encode(tempDoc.getItemValueString("requestFrequency"));
+	content = content + "&t=" + java.net.URLEncoder.encode(tempDoc.getItemValueString("requestType"));
+	content = content + "&v=" + java.net.URLEncoder.encode(tempDoc.getItemValueString("requestVolume"));
+	content = content + "&e=" + java.net.URLEncoder.encode("alerts@qtzar.com");
+
+	var urlConn:java.net.HttpURLConnection = googleURL.openConnection();
+	urlConn.setDoInput (true);
+	urlConn.setDoOutput (true);
+	urlConn.setUseCaches (false);
+	urlConn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+
+	var googleOutput:java.io.DataOutputStream = new java.io.DataOutputStream(urlConn.getOutputStream ());
+	googleOutput.writeBytes (content);
+	googleOutput.flush ();
+	googleOutput.close ();
+
+	var googleInput:java.io.DataInputStream = new java.io.DataInputStream(urlConn.getInputStream ());
+	var str;
+	while (null != ((str = googleInput.readLine()))) {
+		// Do Nothing. We don't need to save the inputStream
+		// But we do need to process each line
+	}
+	googleInput.close ();
+	tempDoc.removePermanently(true);
+	var msg = "Request Submitted To Google And Accepted."
+
+} catch (e) {
+	var msg = "There Was A Problem Submitting Your Request To Google."
+}
+
+var info = javax.faces.application.FacesMessage.SEVERITY_INFO;
+facesContext.addMessage(this.getClientId(facesContext),new javax.faces.application.FacesMessage(info, msg, msg));}]]></xp:this.action>
+								</xp:eventHandler>
+							</xp:link>
+						</xp:td>
+						<xp:td styleClass="lotusLastCell">
+							<xp:link escape="true" text="Decline" id="link2" outerStyleClass="lotusBtn">
+								<xp:eventHandler event="onclick" submit="true" refreshMode="complete">
+									<xp:this.action><![CDATA[#{javascript:var tempDoc:NotesDocument = requestsVar.getDocument();
+tempDoc.removePermanently(true);}]]></xp:this.action>
+								</xp:eventHandler>
+							</xp:link>
+						</xp:td>
+						<xp:td>
+							<xp:text escape="true" id="computedField4" value="#{requestsVar.requestAuthor}" />
+						</xp:td>
+						<xp:td>
+							<xp:text escape="true" id="computedField5" value="#{requestsVar.requestSearchTerms}" />
+						</xp:td>
+						<xp:td>
+							<xp:text escape="true" id="computedField6">
+								<xp:this.value><![CDATA[#{javascript:var tmp = parseInt(requestsVar.getColumnValue("requestType"));
+switch(tmp){
+	case 7:
+		return "Everything"
+		break;
+	case 1:
+		return "News"
+		break;
+	case 4:
+		return "Blogs"
+		break;
+	case 20:
+		return "Realtime"
+		break;
+	case 8:
+		return "Discussion"
+		break;
+	case 9:
+		return "Video"
+		break;
+	default:
+		return "Unknown"
+}}]]></xp:this.value>
+							</xp:text>
+						</xp:td>
+						<xp:td>
+							<xp:text escape="true" id="computedField7">
+								<xp:this.value><![CDATA[#{javascript:var tmp = parseInt(requestsVar.getColumnValue("requestFrequency"));
+switch(tmp){
+	case 0:
+		return "As It Happens"
+		break;
+	case 1:
+		return "Once A Day"
+		break;
+	case 6:
+		return "Once A Week"
+		break;
+	default:
+		return "Unknown"
+}}]]></xp:this.value>
+							</xp:text>
+						</xp:td>
+						<xp:td>
+							<xp:text escape="true" id="computedField8">
+								<xp:this.value><![CDATA[#{javascript:var tmp = parseInt(requestsVar.getColumnValue("requestVolume"));
+switch(tmp){
+	case 0:
+		return "All Results"
+		break;
+	case 1:
+		return "Only The Best Results"
+		break;
+	default:
+		return "Unknown"
+}}]]></xp:this.value>
+							</xp:text>
+						</xp:td>
+					</xp:tr>
+				</xp:repeat>
+				<xp:messages id="messages1"></xp:messages>
+			</xp:panel>
+		</xp:panel>
+		<xc:layout_Footer />
+	</xp:panel>
+</xp:view>

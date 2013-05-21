@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" replicaid="85257818000B8E8F" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="51ba" sequence="7" unid="BD9650524D31BD39852578250017630F">
+<created><datetime>20110126T231526,87-05</datetime></created>
+<modified><datetime>20110220T133311,27-05</datetime></modified>
+<revised><datetime>20110220T133311,26-05</datetime></revised>
+<lastaccessed><datetime>20110220T133311,27-05</datetime></lastaccessed>
+<addedtofile><datetime>20110126T231526,91-05</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Declan Sciolla-Lynch/O=Imagination</name></updatedby>
+<wassignedby><name>CN=Declan Sciolla-Lynch/O=Imagination</name></wassignedby>
+<item name="$Comment"><text>iWatch V2.1.0</text></item>
+<item name="$TITLE"><text>Blackberry.css</text></item>
+<item name="$MimeType"><text>text/css</text></item>
+<item name="$Flags"><text>34C=Q</text></item>
+<item name="$MimeCharSet"><text>UTF-8</text></item>
+<item name="$DesignerVersion"><text>8.5.2</text></item>
+
+
+<item name="$FileNames" sign="true"><text>Blackberry.css</text></item></note>

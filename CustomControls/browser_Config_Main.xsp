@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom" xmlns:xe="http://www.ibm.com/xsp/coreex">
+	<xp:panel styleClass="lotusFrame">
+		<xc:layout_Banner />
+		<xc:layout_TitleBar />
+		<xc:layout_PlaceBar />
+		<xp:panel styleClass="lotusMain">
+			<xc:layout_Sidebar_Config />
+			<xp:panel styleClass="lotusContent">
+				<xe:formTable id="formTable1" formTitle="Application Settings" formDescription="These are the basic settings for the application"
+					disableErrorSummary="true" disableRowError="true">
+					<xp:this.facets>
+						<xp:panel xp:key="footer" id="panel1">
+							<xp:link escape="true" text="Save Configuration" id="link1" outerStyleClass="lotusBtn">
+								<xp:eventHandler event="onclick" submit="true" refreshMode="complete">
+									<xp:this.action><![CDATA[#{javascript:var configView:NotesView = database.getView("lkp_cfg_ActiveConfig");
+var configDoc:NotesDocument = configView.getFirstDocument();
+
+configDoc.replaceItemValue("cfg_basic_appname",applicationScope.appName);
+configDoc.replaceItemValue("cfg_basic_appDesc",applicationScope.appDesc);
+configDoc.replaceItemValue("cfg_basic_appFooter",applicationScope.appFooter);
+configDoc.replaceItemValue("cfg_basic_appTheme",applicationScope.appTheme);
+configDoc.replaceItemValue("cfg_basic_appThemeVersion",applicationScope.appThemeVersion);
+configDoc.replaceItemValue("cfg_basic_appEmail",applicationScope.appEmail);
+configDoc.replaceItemValue("cfg_basic_enableUserRequests",applicationScope.enableUserRequests);
+configDoc.replaceItemValue("cfg_basic_enableRequestApproval",applicationScope.enableRequestApproval);
+configDoc.replaceItemValue("cfg_basic_enableModeration",applicationScope.enableModeration);
+configDoc.replaceItemValue("cfg_basic_enableTwitter",applicationScope.enableTwitter);
+configDoc.replaceItemValue("cfg_history_keepMemos",applicationScope.keepMemoDays);
+configDoc.replaceItemValue("cfg_history_keepAlerts",applicationScope.keepAlertDays);
+configDoc.save(true,true);
+
+var msg = "Configuration Saved"
+var info = javax.faces.application.FacesMessage.SEVERITY_INFO;
+facesContext.addMessage(this.getClientId(facesContext),new javax.faces.application.FacesMessage(info, msg, msg));
+
+// Check The Current Theme 
+if (sessionScope.browserType == "browser"){
+		if (context.getSessionProperty("xsp.theme") != sessionScope.browserType + "_" + applicationScope.blogTheme){
+			context.setSessionProperty("xsp.theme",sessionScope.browserType + "_" + applicationScope.blogTheme);
+		}
+}}]]></xp:this.action>
+								</xp:eventHandler>
+							</xp:link>
+						</xp:panel>
+					</xp:this.facets>
+					<xe:formRow id="formRow1" label="Application name">
+						<xp:inputText id="inputText1" value="#{applicationScope.appName}" style="width:100%" />
+					</xe:formRow>
+					<xe:formRow id="formRow2" label="Description">
+						<xp:inputText id="inputText2" value="#{applicationScope.appDesc}" style="width:100%" />
+					</xe:formRow>
+					<xe:formRow id="formRow3" label="Footer">
+						<xp:inputText id="inputText7" value="#{applicationScope.appFooter}" style="width:100%" />
+					</xe:formRow><xe:formRow id="formRow12" label="Layout Style">
+						<xp:comboBox id="comboBox2" value="#{applicationScope.appThemeVersion}" style="width:175.0px">
+							<xp:selectItem itemLabel="oneUI V2" itemValue="2" id="selectItem6" />
+							<xp:selectItem itemLabel="oneUI V2.1" itemValue="2.1" id="selectItem7" />
+						</xp:comboBox>
+					</xe:formRow>
+					
+					<xe:formRow id="formRow4" label="Color Scheme">
+						<xp:comboBox id="comboBox1" value="#{applicationScope.appTheme}" style="width:175.0px">
+							<xp:selectItem itemLabel="Blue" itemValue="blue" id="selectItem1" />
+							<xp:selectItem itemLabel="Gold" itemValue="gold" id="selectItem2" />
+							<xp:selectItem itemLabel="Green" itemValue="green" id="selectItem3" />
+							<xp:selectItem itemLabel="Metal" itemValue="metal" id="selectItem4" />
+							<xp:selectItem itemLabel="Red" itemValue="red" id="selectItem5" />
+							<xp:selectItem itemLabel="Pink" itemValue="pink" id="selectItem8" />
+							<xp:selectItem itemLabel="Purple" itemValue="purple" id="selectItem9" />
+							<xp:selectItem itemLabel="Orange" itemValue="orange" id="selectItem10" />
+							<xp:selectItem itemLabel="Onyn" itemValue="onyx" id="selectItem11" />
+							<xp:selectItem itemLabel="Silver" itemValue="silver" id="selectItem12" />
+							<xp:selectItem itemLabel="gen1" itemValue="gen1" id="selectItem13" />
+							<xp:selectItem itemLabel="Base Only" itemValue="baseonly" id="selectItem14" />
+						</xp:comboBox>
+					</xe:formRow>
+					<xe:formRow id="formRow10" label="Mail-in Address">
+						<xp:inputText id="inputText5" value="#{applicationScope.appEmail}" style="width:100%" />
+					</xe:formRow>
+					<xe:formRow id="formRow5" label="User Alert Requests">
+						<xp:radioGroup id="radioGroup1" value="#{applicationScope.enableUserRequests}">
+							<xp:selectItem itemLabel="Enabled" itemValue="true" />
+							<xp:selectItem itemLabel="Disabled" itemValue="false" />
+						</xp:radioGroup>
+					</xe:formRow>
+					<xe:formRow id="formRow6" label="Require Approval">
+						<xp:radioGroup id="radioGroup3" value="#{applicationScope.enableRequestApproval}">
+							<xp:selectItem itemLabel="Enabled" itemValue="true" />
+							<xp:selectItem itemLabel="Disabled" itemValue="false" />
+						</xp:radioGroup>
+					</xe:formRow>
+					<xe:formRow id="formRow7" label="Alert Moderation">
+						<xp:radioGroup id="radioGroup2" value="#{applicationScope.enableModeration}" style="padding-bottom:0px;">
+							<xp:selectItem itemLabel="Enabled" itemValue="true" />
+							<xp:selectItem itemLabel="Disabled" itemValue="false" />
+						</xp:radioGroup>
+					</xe:formRow>
+					<xe:formRow id="formRow11" label="Enable Twitter">
+						<xp:radioGroup id="radioGroup4" value="#{applicationScope.enableTwitter}" style="padding-bottom:0px;">
+							<xp:selectItem itemLabel="Enabled" itemValue="true" />
+							<xp:selectItem itemLabel="Disabled" itemValue="false" />
+						</xp:radioGroup>
+					</xe:formRow>
+					<xe:formRow id="formRow8" label="Keep Emails">
+						<xp:inputText id="inputText3" value="#{applicationScope.keepMemoDays}">
+							<xp:this.converter>
+								<xp:convertNumber type="number" integerOnly="true"></xp:convertNumber>
+							</xp:this.converter>
+						</xp:inputText>
+						Days
+					</xe:formRow>
+					<xe:formRow id="formRow9" label="Keep Alerts">
+						<xp:inputText id="inputText4" value="#{applicationScope.keepAlertDays}">
+							<xp:this.converter>
+								<xp:convertNumber type="number" integerOnly="true"></xp:convertNumber>
+							</xp:this.converter>
+						</xp:inputText>
+						Days
+					</xe:formRow>
+				</xe:formTable>
+				<xp:messages id="messages1" />
+			</xp:panel>
+		</xp:panel>
+		<xc:layout_Footer />
+	</xp:panel>
+</xp:view>

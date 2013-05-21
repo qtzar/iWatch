@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note class='view' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='85257818000B8E8F'>
+<noteinfo noteid='282' unid='80F697C69230E40E852578180068CF33' sequence='14'>
+<created><datetime>20110114T140447,87-05</datetime></created>
+<modified><datetime>20110220T133316,33-05</datetime></modified>
+<revised><datetime>20110220T133316,32-05</datetime></revised>
+<lastaccessed><datetime dst='true'>20130322T102433,87-04</datetime></lastaccessed>
+<addedtofile><datetime>20110114T140451,35-05</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Declan Sciolla-Lynch/O=Imagination</name></updatedby>
+<wassignedby><name>CN=Declan Sciolla-Lynch/O=Imagination</name></wassignedby>
+<item name='$FormulaClass' sign='true'><text>1</text></item>
+<item name='$TITLE' sign='true'><text>Lookups\Verifications\Processed|lkp_Verification_Processed</text></item>
+<item name='$Index' sign='true'><text/></item>
+<item name='$Formula' summary='true' sign='true'><formula compiled='true'>
+4AAFADAALAADAAwADQAJAGdlU2VhcmNoVGVybURlbGl2ZXJlZERhdGUkQ29uZmxpY3QEAAQAAACG
+AAUABABGb3JtAQAEAE1lbW8KAgUABwBTdWJqZWN0AAEAEABDbGljayB0byBjb25maXJtRwIFAAcA
+U3ViamVjdAABAAwAVmVyaWZpY2F0aW9uRwIdAgQAHAIFABcAZ2VWZXJpZmljYXRpb25Qcm9jZXNz
+ZWQAAQADAFllcwAKAhwCAwAHACQAHgAJTDFTMlMzUzRTNVMxMlMxM1MyMFMyMVMyMlMyM1M=
+</formula></item>
+<item name='$Collation' summary='true'>
+<rawitemdata type='2'>
+GQABAABEgGYAAAAMAGdlU2VhcmNoVGVybQ==
+</rawitemdata></item>
+<item name='$ViewFormat' summary='true' sign='true'>
+<rawitemdata type='5'>
+AQACAAUAijgAAFZDAQAMAAwAAAAAAKAAAQAACgAAAAAAAAAAAAICAAAAVkMAAA0ADQAAAAAAhAAB
+AAAKAAAAAAAAAAAAAgIAAABnZVNlYXJjaFRlcm1nZVNlYXJjaFRlcm1EZWxpdmVyZWREYXRlRGVs
+aXZlcmVkRGF0ZSYAAQAAAAEBAAkBAAAKAQEOCgAALwCtKwkBAQABAAAAAAAAAAAAV0MBAQAJAAAA
+AAAAAAAAAAAAAAAAAAAABAAAAAAA//8AAAAAAAAAAAAAAAAAAFdDAQEACQAAAAAAAAAAAAAAAAAA
+AAAAAEQAAAAAAP//AAAAAAAAAAAAAAAAAABCAAAAAAABAP///wABAPf39wABAAAAAAAAAAAAAAAA
+AAEA////AAEA////AAAAAQAAAAAAAQCAgIAAAQAAAAAAAAAIAAAAAAABAFhDAAyAAgAAAAAAAQIC
+AgEBAQEHBAMAAAAAAAAAACAvLzo=
+</rawitemdata></item>
+<item name='$Comment' sign='true'><text>iWatch V2.0.0</text></item>
+<item name='$Flags'><text>Yw</text></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item>
+<item name='$V5ACTIONS' sign='true'>
+<rawitemdata type='1'>
+i/8oAAEABRZHZW9yZ2lhAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL0cAQAAAAIAAQAAAAEAAAAA
+AAAABQAACQgAAgB5/2wAAQD///8AAQAAAAAAAQAAAAAAAQD///8AAQAfAAAAAAAAAAAAAwAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAD8/zoAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA
+AAAAAAAAvv8mAAAABQAAAJ0BAAALAAAAAAAAAENhdGVnb3JpX3plAAEATny+/ygAAAAFAAAAnQEA
+AA4AAAAAAAAAX0VkaXQgRG9jdW1lbnQCAAIKvv8oAAAABQAAAJ0BAAAOAAAAAAAAAFNlbmQgRG9j
+dV9tZW50AwADCr7/IgAAAAUAAACdAQAACAAAAAAAAABfRm9yd2FyZAQABAq+/ywAAAAFAAAAnQEA
+ABIAAAAAAAAAX01vdmUgVG8gRm9sZGVyLi4uBQA9fL7/LgAAAAUAAACdAQAAEwAAAAAAAABfUmVt
+b3ZlIEZyb20gRm9sZGVyMwYAPnw=
+</rawitemdata></item>
+<item name='$ACTIONS' sign='true'>
+<rawitemdata type='1'>
+vRwBAAAAAgABAAAAAQAAAAAAAACmAAAJCAACAL7/JgAAAAUAAACdAQAACwAAAAAAAABDYXRlZ29y
+aV96ZQQBAE58vv8oAAAABQAAAJ0BAAAOAAAAAAAAAF9FZGl0IERvY3VtZW50AgACCr7/KAAAAAUA
+AACdAQAADgAAAAAAAABTZW5kIERvY3VfbWVudAMAAwq+/yIAAAAFAAAAnQEAAAgAAAAAAAAAX0Zv
+cndhcmQEAAQKvv8sAAAABQAAAJ0BAAASAAAAAAAAAF9Nb3ZlIFRvIEZvbGRlci4uLgUAPXy+/y4A
+AAAFAAAAnQEAABMAAAAAAAAAX1JlbW92ZSBGcm9tIEZvbGRlcnQGAD58
+</rawitemdata></item></note>
+

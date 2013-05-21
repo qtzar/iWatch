@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xe="http://www.ibm.com/xsp/coreex"
+	xmlns:xc="http://www.ibm.com/xsp/custom">
+	<xp:this.data>
+		<xp:dominoView var="vwCategories"
+			viewName="lkp_Verification_Processed" />
+		<xp:dominoView var="vwItems" viewName="lkp_Items_Approved" />
+	</xp:this.data>
+	<xe:mApp id="mApp1" selectedPageId="Home">
+		<xe:mPage id="Home" resetContent="true">
+			<xe:djxmHeading id="djxmHeading1"
+				label="#{javascript:applicationScope.appName}" />
+			<xe:djxmRoundRectList id="djxmRoundRectList1">
+				<xe:mLineItem id="mLineItem5" title="Latest News"
+					targetPageId="Latest" />
+			</xe:djxmRoundRectList>
+			<xe:djxmRoundRectList id="djxmRoundRectList2">
+				<xp:repeat id="repeat1" rows="999"
+					value="#{vwCategories}" var="rptCatVar" indexVar="rptCatIndx">
+					<xe:mLineItem id="mLineItem2">
+						<xe:this.targetUrl><![CDATA[#{javascript:var thisURL:XSPUrl = context.getUrl();
+var tempDoc:NotesDocument = rptCatVar.getDocument();
+return @LeftBack(thisURL,".nsf") + ".nsf/showCategory.xsp?category=" + tempDoc.getItemValueString("geSearchTerm")}]]></xe:this.targetUrl>
+						<xe:this.title><![CDATA[#{javascript:var tempDoc:NotesDocument = rptCatVar.getDocument();
+tempDoc.getItemValueString("geSearchTerm")}]]></xe:this.title>
+					</xe:mLineItem>
+				</xp:repeat>
+			</xe:djxmRoundRectList>
+		</xe:mPage>
+		<xe:mPage id="Latest" resetContent="false" preload="true">
+			<xe:djxmHeading id="djxmHeading2"
+				label="#{javascript:applicationScope.appName}" back="Main"
+				moveTo="Home" />
+			<xp:repeat id="repeat2" rows="30" value="#{vwItems}"
+				var="alertVar">
+				<xc:iPad_NewsItem
+					docUNID="#{javascript:alertVar.getNoteID();}" />
+			</xp:repeat>
+
+		</xe:mPage>
+	</xe:mApp>
+
+
+
+</xp:view>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" replicaid="85257818000B8E8F" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="51b2" sequence="12" unid="E9A55C0F0A43669E85257825001715D8">
+<created><datetime>20110126T231209,20-05</datetime></created>
+<modified><datetime>20110220T133312,53-05</datetime></modified>
+<revised><datetime>20110220T133312,52-05</datetime></revised>
+<lastaccessed><datetime>20110220T133312,53-05</datetime></lastaccessed>
+<addedtofile><datetime>20110126T231210,33-05</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Declan Sciolla-Lynch/O=Imagination</name></updatedby>
+<item name="$Flags"><text>34567Cg~`</text></item>
+<item name="$TITLE" sign="true"><text>Android.theme</text></item>
+
+<item name="$Comment" sign="true"><text>iWatch V2.1.0</text></item>
+<item name="$DesignerVersion"><text>8.5.2</text></item>
+
+
+<item name="$FileNames" sign="true"><text>Android.theme</text></item>
+<item name="$CSSFiles"><textlist><text>Android.css</text></textlist></item></note>

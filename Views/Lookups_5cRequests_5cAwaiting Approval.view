@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note class='view' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='85257818000B8E8F'>
+<noteinfo noteid='42e' unid='D576D891B83ADBE985257819000C168E' sequence='16'>
+<created><datetime>20110114T211202,06-05</datetime></created>
+<modified><datetime>20110220T133316,05-05</datetime></modified>
+<revised><datetime>20110220T133316,04-05</datetime></revised>
+<lastaccessed><datetime dst='true'>20130322T102438,23-04</datetime></lastaccessed>
+<addedtofile><datetime>20110114T211204,05-05</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Declan Sciolla-Lynch/O=Imagination</name></updatedby>
+<wassignedby><name>CN=Declan Sciolla-Lynch/O=Imagination</name></wassignedby>
+<item name='$FormulaClass' sign='true'><text>1</text></item>
+<item name='$TITLE' sign='true'><text>Lookups\Requests\Awaiting Approval|lkp_Requests_Waiting</text></item>
+<item name='$Index' sign='true'><text/></item>
+<item name='$Formula' summary='true' sign='true'><formula compiled='true'>
+ugACACgAAgAkNgIABgAAAAAAAAAFAA0AcmVxdWVzdEF1dGhvcgC0AgMABQBaAFUABgACABIACwAQ
+AA0ACQAkNnJlcXVlc3RTZWFyY2hUZXJtc3JlcXVlc3RUeXBlcmVxdWVzdEZyZXF1ZW5jeXJlcXVl
+c3RWb2x1bWUkQ29uZmxpY3QABAAEAAAAJAAFAAQARm9ybQEADwBmbV9BbGVydFJlcXVlc3QACgID
+AAcADgAIAAlMMVMyUzNT
+</formula></item>
+<item name='$Collation' summary='true'>
+<rawitemdata type='2'>
+OgADAABEGGYAAAACAAFmAAIAEgCBZgAUAAsAJDZyZXF1ZXN0U2VhcmNoVGVybXNyZXF1ZXN0VHlw
+ZQ==
+</rawitemdata></item>
+<item name='$ViewFormat' summary='true' sign='true'>
+<rawitemdata type='5'>
+AQAFAAoAijgAAFZDAAACAA0ANgAAAPAABQAACQABAAAAAAAAAAICAAAAVkMFABIAEgAAAAAAoAAG
+AAAJAAAAAAAAAAAAAgIAAABWQwUACwALAAAAAACCAAcAAAkAAAAAAAAAAAACAgAAAFZDAAAQABAA
+AAAAAGUAAQAACgAAAAAAAAAAAAICAAAAVkMAAA0ADQAAAAAAYAABAAAKAAAAAAAAAAAAAgIAAAAk
+NnJlcXVlc3RBdXRob3I2AAIAKAACACQ2AgAGAAAAAAAAAAUADQByZXF1ZXN0QXV0aG9yALQCAwAH
+AAwABQAJMFMwRQByZXF1ZXN0U2VhcmNoVGVybXNyZXF1ZXN0U2VhcmNoVGVybXNyZXF1ZXN0VHlw
+ZXJlcXVlc3RUeXBlcmVxdWVzdEZyZXF1ZW5jeXJlcXVlc3RGcmVxdWVuY3lyZXF1ZXN0Vm9sdW1l
+cmVxdWVzdFZvbHVtZSYAAQAAAAEBAAkBAAAKAQEOCgAALwCtKwkBAQABAAAAAAAAAAAAV0MIAQAJ
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAAAAAAAAAAAAAAAAAFdDCQEACQAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAP//AAAAAAAAAAAAAAAAAABXQwoBAAkAAAAAAAAAAAAAAAAAAAAAAAAEAAAA
+AAD//wAAAAAAAAAAAAAAAAAAV0MBAQAJAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA//8AAAAAAAAA
+AAAAAAAAAFdDAQEACQAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAP//AAAAAAAAAAAAAAAAAABCAAAA
+AAABAP///wABAPf39wABAAAAAAAAAAAAAAAAAAEA////AAEA////AAAAAQAAAAAAAQCAgIAAAQAA
+AAAAAAAIAAAAAAABAA==
+</rawitemdata></item>
+<item name='$Fonts' sign='true'><textlist><text>5</text><text>22</text><text
+>Georgia</text><text>6</text><text>22</text><text>Georgia</text><text>7</text><text
+>22</text><text>Georgia</text><text>8</text><text>22</text><text>Georgia</text><text
+>9</text><text>22</text><text>Georgia</text><text>10</text><text>22</text><text
+>Georgia</text></textlist></item>
+<item name='$Comment' sign='true'><text>iWatch V2.0.0</text></item>
+<item name='$Flags'><text>Yw</text></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item>
+<item name='$V5ACTIONS' sign='true'>
+<rawitemdata type='1'>
+i/8oAAEABRZHZW9yZ2lhAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL0cAQAAAAIAAQAAAAEAAAAA
+AAAABQAACQgAAgB5/2wAAQD///8AAQAAAAAAAQAAAAAAAQD///8AAQAfAAAAAAAAAAAAAwAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAD8/zoAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA
+AAAAAAAAvv8mAAAABQAAAJ0BAAALAAAAAAAAAENhdGVnb3JpX3plqgEATny+/ygAAAAFAAAAnQEA
+AA4AAAAAAAAAX0VkaXQgRG9jdW1lbnQCAAIKvv8oAAAABQAAAJ0BAAAOAAAAAAAAAFNlbmQgRG9j
+dV9tZW50AwADCr7/IgAAAAUAAACdAQAACAAAAAAAAABfRm9yd2FyZAQABAq+/ywAAAAFAAAAnQEA
+ABIAAAAAAAAAX01vdmUgVG8gRm9sZGVyLi4uBQA9fL7/LgAAAAUAAACdAQAAEwAAAAAAAABfUmVt
+b3ZlIEZyb20gRm9sZGVyqgYAPnw=
+</rawitemdata></item>
+<item name='$ACTIONS' sign='true'>
+<rawitemdata type='1'>
+vRwBAAAAAgABAAAAAQAAAAAAAACmAAAJCAACAL7/JgAAAAUAAACdAQAACwAAAAAAAABDYXRlZ29y
+aV96ZQABAE58vv8oAAAABQAAAJ0BAAAOAAAAAAAAAF9FZGl0IERvY3VtZW50AgACCr7/KAAAAAUA
+AACdAQAADgAAAAAAAABTZW5kIERvY3VfbWVudAMAAwq+/yIAAAAFAAAAnQEAAAgAAAAAAAAAX0Zv
+cndhcmQEAAQKvv8sAAAABQAAAJ0BAAASAAAAAAAAAF9Nb3ZlIFRvIEZvbGRlci4uLgUAPXy+/y4A
+AAAFAAAAnQEAABMAAAAAAAAAX1JlbW92ZSBGcm9tIEZvbGRlci8GAD58
+</rawitemdata></item></note>
+

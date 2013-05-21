@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note class='view' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='85257818000B8E8F'>
+<noteinfo noteid='45a' unid='03D2F3075CAB03708525781900147924' sequence='10'>
+<created><datetime>20110114T224337,32-05</datetime></created>
+<modified><datetime>20110220T133315,77-05</datetime></modified>
+<revised><datetime>20110220T133315,76-05</datetime></revised>
+<lastaccessed><datetime dst='true'>20130322T102458,32-04</datetime></lastaccessed>
+<addedtofile><datetime>20110114T224339,06-05</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Declan Sciolla-Lynch/O=Imagination</name></updatedby>
+<wassignedby><name>CN=Declan Sciolla-Lynch/O=Imagination</name></wassignedby>
+<item name='$FormulaClass' sign='true'><text>1</text></item>
+<item name='$TITLE' sign='true'><text>Lookups\Items\Approved\Category|lkp_Items_Approved_Category</text></item>
+<item name='$Index' sign='true'><text/></item>
+<item name='$Formula' summary='true' sign='true'><formula compiled='true'>
+eAAFAC4AKQAEAAoABgAJAAQAbmlDYXRlZ29yeW5pRGF0ZSRDb25mbGljdCRSRUYABAAEAAAANgAF
+AAQAZm9ybQEABwBmcm1OZXdzAAoCBQAKAG5pQXBwcm92ZWQBAAMAWWVzAAoCHAIDAAcADgAIAAlM
+MVM0UzVT
+</formula></item>
+<item name='$Collation' summary='true'>
+<rawitemdata type='2'>
+JAACAABECGYHAAAKAIFmAAoABgBuaUNhdGVnb3J5bmlEYXRl
+</rawitemdata></item>
+<item name='$ViewFormat' summary='true' sign='true'>
+<rawitemdata type='5'>
+AQACAAIACAAAAFZDAwAKAAoAAAAAAH8AAQAACgABAAAAAAAAAAICAAAAVkMFAAYABgAAAAAArAAB
+AAAKAAAAAAAAAAAAAgIAAABuaUNhdGVnb3J5bmlDYXRlZ29yeW5pRGF0ZW5pRGF0ZSYAAQAAAAEB
+AAkBAAAKAQEOCgAAAQCtKwEAAQABAAAAAAAAAAAAV0MBAQAJAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAA//8AAAAAAAAAAAAAAAAAAFdDAQEACQAAAAAAAAAAAAAAAAAAAAAAAEQAAAAAAP//AAAAAAAA
+AAAAAAAAAABCAAAAAAABAP///wAFAP///wABAAAAAAAAAAAAAAAAAAEA////AAEA////AAAAAQAA
+AAAAAQAAAAAAAQAAAAAAAAAIAAAAAAABAFhDAAyAAgAAAAAAAQICAgEBAQEHBAMAAAAAAAAAACAv
+Lzo=
+</rawitemdata></item>
+<item name='$Comment' sign='true'><text>iWatch V2.0.0</text></item>
+<item name='$Flags'><text>Yw</text></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item></note>
+

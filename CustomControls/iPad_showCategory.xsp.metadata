@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" replicaid="85257818000B8E8F" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="519a" sequence="21" unid="DE6B61A303E05D07852578250016628F">
+<created><datetime>20110126T230430,23-05</datetime></created>
+<modified><datetime>20110220T133328,33-05</datetime></modified>
+<revised><datetime>20110220T133328,32-05</datetime></revised>
+<lastaccessed><datetime>20110220T133328,33-05</datetime></lastaccessed>
+<addedtofile><datetime>20110126T230430,24-05</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Declan Sciolla-Lynch/O=Imagination</name></updatedby>
+<wassignedby><name>CN=Declan Sciolla-Lynch/O=Imagination</name></wassignedby>
+<item name="$Comment" sign="true"><text>iWatch V2.1.0</text></item>
+<item name="$Flags"><text>gC~4;</text></item>
+<item name="$TITLE" sign="true"><text>iPad_showCategory.xsp</text></item>
+
+
+
+<item name="$FileNames" sign="true"><text>iPad_showCategory.xsp</text></item>
+
+
+<item name="$DesignerVersion"><text>8.5</text></item>
+
+
+
+</note>

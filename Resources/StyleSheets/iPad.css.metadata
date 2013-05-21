@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" replicaid="85257818000B8E8F" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="1c6" sequence="9" unid="572AEDD539FCC9CC85257818000CEF9F">
+<created><datetime>20110113T212117,75-05</datetime></created>
+<modified><datetime>20110220T133311,72-05</datetime></modified>
+<revised><datetime>20110220T133311,71-05</datetime></revised>
+<lastaccessed><datetime>20110220T133311,72-05</datetime></lastaccessed>
+<addedtofile><datetime>20110113T212120,10-05</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Declan Sciolla-Lynch/O=Imagination</name></updatedby>
+<wassignedby><name>CN=Declan Sciolla-Lynch/O=Imagination</name></wassignedby>
+<item name="$TITLE"><text>iPad.css</text></item>
+<item name="$MimeType" sign="true"><text>text/css</text></item>
+<item name="$Flags"><text>34C=Q</text></item>
+<item name="$MimeCharSet" sign="true"><text>UTF-8</text></item>
+<item name="$Comment" sign="true"><text>iWatch V2.0.0</text></item>
+<item name="$DesignerVersion"><text>8.5.2</text></item>
+
+
+<item name="$FileNames" sign="true"><text>iPad.css</text></item></note>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom" xmlns:xe="http://www.ibm.com/xsp/coreex">
+	<xp:panel styleClass="lotusFrame">
+		<xc:layout_Banner />
+		<xc:layout_TitleBar />
+		<xc:layout_PlaceBar />
+		<xp:panel styleClass="lotusMain">
+			<xc:layout_Sidebar_Config />
+			<xp:panel styleClass="lotusContent">
+				<xe:formTable id="formTable1" formTitle="New Alerts Request"
+					formDescription="Enter in your alerts request details and Google will start sending these alerts to the system for processing."
+					disableErrorSummary="true">
+					<xp:this.facets>
+						<xp:panel key="footer" id="formFooter">
+							<xp:link escape="true" text="Submit To Google" id="link1" outerStyleClass="lotusBtn">
+								<xp:eventHandler event="onclick" submit="true" refreshMode="complete">
+									<xp:this.action><![CDATA[#{javascript:try {
+		var googleURL:java.net.URL = new java.net.URL("http://www.google.com/alerts/create");
+
+		var content = "q=" + java.net.URLEncoder.encode(requestScope.requestSearchTerms);
+		content = content + "&f=" + java.net.URLEncoder.encode(requestScope.requestFrequency);
+		content = content + "&t=" + java.net.URLEncoder.encode(requestScope.requestType);
+		content = content + "&v=" + java.net.URLEncoder.encode(requestScope.requestVolume);
+		content = content + "&e=" + java.net.URLEncoder.encode(applicationScope.appEmail);
+
+		var urlConn:java.net.HttpURLConnection = googleURL.openConnection();
+		urlConn.setDoInput (true);
+		urlConn.setDoOutput (true);
+		urlConn.setUseCaches (false);
+		urlConn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+
+		var googleOutput:java.io.DataOutputStream = new java.io.DataOutputStream(urlConn.getOutputStream ());
+		googleOutput.writeBytes (content);
+		googleOutput.flush ();
+		googleOutput.close ();
+
+		var googleInput:java.io.DataInputStream = new java.io.DataInputStream(urlConn.getInputStream ());
+		var str;
+		while (null != ((str = googleInput.readLine()))) {
+			// Do Nothing. We don't actually need the input
+		}
+		googleInput.close ();
+		var msg = "Request Submitted To Google And Accepted."
+
+	} catch (e) {
+		var msg = "There Was A Problem Submitting Your Request To Google."
+	}
+
+
+var info = javax.faces.application.FacesMessage.SEVERITY_INFO;
+facesContext.addMessage(this.getClientId(facesContext),new javax.faces.application.FacesMessage(info, msg, msg));
+}]]></xp:this.action>
+								</xp:eventHandler>
+							</xp:link>
+						</xp:panel>
+					</xp:this.facets>
+					<xe:formRow id="formRow1" label="Search Terms">
+						<xp:inputText id="inputText1" style="width:50%" value="#{requestScope.requestSearchTerms}" required="true">
+							<xp:this.validators>
+								<xp:validateRequired message="Please supply your search terms for this request."></xp:validateRequired>
+							</xp:this.validators>
+						</xp:inputText>
+					</xe:formRow>
+					<xe:formRow id="formRow2" label="Type">
+						<xp:comboBox id="comboBox1" value="#{requestScope.requestType}">
+							<!--							<xp:selectItem itemLabel="Everything" itemValue="7" />-->
+							<xp:selectItem itemLabel="News" itemValue="1" />
+							<!--							<xp:selectItem itemLabel="Blogs" itemValue="4" />-->
+							<!--							<xp:selectItem itemLabel="Realtime" itemValue="20" />-->
+							<!--							<xp:selectItem itemLabel="Video" itemValue="9" />-->
+							<!--							<xp:selectItem itemLabel="Discussion" itemValue="8" />-->
+						</xp:comboBox>
+					</xe:formRow>
+					<xe:formRow id="formRow3" label="How Often">
+						<xp:comboBox id="comboBox2" value="#{requestScope.requestFrequency}">
+							<xp:selectItem itemLabel="As It Happens" itemValue="0" />
+							<xp:selectItem itemLabel="Once A Day" itemValue="1" />
+							<xp:selectItem itemLabel="Once A Week" itemValue="6" />
+						</xp:comboBox>
+					</xe:formRow>
+					<xe:formRow id="formRow4" label="Volume">
+						<xp:comboBox id="comboBox3" value="#{requestScope.requestVolume}">
+							<xp:selectItem itemLabel="Only The Best Results" itemValue="0" />
+							<xp:selectItem itemLabel="All Results" itemValue="1" />
+						</xp:comboBox>
+					</xe:formRow>
+				</xe:formTable>
+				<xp:messages id="messages1"></xp:messages>
+			</xp:panel>
+		</xp:panel>
+		<xc:layout_Footer />
+	</xp:panel>
+</xp:view>

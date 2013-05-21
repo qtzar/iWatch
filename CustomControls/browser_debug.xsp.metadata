@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" replicaid="85257818000B8E8F" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="18a" sequence="16" unid="B1DFDA821CFE526285257818000C322D">
+<created><datetime>20110113T211312,77-05</datetime></created>
+<modified><datetime>20110220T133325,57-05</datetime></modified>
+<revised><datetime>20110220T133325,56-05</datetime></revised>
+<lastaccessed><datetime>20110220T133325,57-05</datetime></lastaccessed>
+<addedtofile><datetime>20110113T211312,77-05</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Declan Sciolla-Lynch/O=Imagination</name></updatedby>
+<wassignedby><name>CN=Declan Sciolla-Lynch/O=Imagination</name></wassignedby>
+<item name="$Comment"><text>XPages Debug Custom Control V1.1 With Updates by Declan F Lynch.</text></item>
+<item name="$TITLE"><text>browser_debug.xsp</text></item>
+<item name="$Flags"><text>gC~4;</text></item>
+
+
+
+<item name="$FileNames" sign="true"><text>browser_debug.xsp</text></item>
+
+
+<item name="$DesignerVersion"><text>8.5.1</text></item>
+
+
+
+
+
+</note>

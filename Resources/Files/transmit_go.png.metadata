@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" replicaid="85257818000B8E8F" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="23e" sequence="6" unid="82DF9EEA91047FBF85257818006673DF">
+<created><datetime>20110114T133903,35-05</datetime></created>
+<modified><datetime>20110220T133309,41-05</datetime></modified>
+<revised><datetime>20110220T133309,40-05</datetime></revised>
+<lastaccessed><datetime>20110220T133309,41-05</datetime></lastaccessed>
+<addedtofile><datetime>20110114T133903,50-05</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Declan Sciolla-Lynch/O=Imagination</name></updatedby>
+<wassignedby><name>CN=Declan Sciolla-Lynch/O=Imagination</name></wassignedby>
+<item name="$TITLE"><text>transmit_go.png</text></item>
+<item name="$Flags"><text>345CgQ</text></item>
+<item name="$FlagsExt"><text>D</text></item>
+<item name="$FileModDT" sign="true"><datetime>20101116T170742,38-05</datetime></item>
+<item name="$DesignerVersion"><text>8.5.2</text></item>
+
+
+<item name="$FileNames" sign="true"><text>transmit_go.png</text></item></note>

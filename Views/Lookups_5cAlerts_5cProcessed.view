@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note class='view' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='85257818000B8E8F'>
+<noteinfo noteid='42a' unid='BB94854A8F9BAACF85257819000C0E23' sequence='12'>
+<created><datetime>20110114T211140,51-05</datetime></created>
+<modified><datetime>20110220T133315,47-05</datetime></modified>
+<revised><datetime>20110220T133315,46-05</datetime></revised>
+<lastaccessed><datetime dst='true'>20110502T200857,58-04</datetime></lastaccessed>
+<addedtofile><datetime>20110114T211142,18-05</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Declan Sciolla-Lynch/O=Imagination</name></updatedby>
+<wassignedby><name>CN=Declan Sciolla-Lynch/O=Imagination</name></wassignedby>
+<item name='$FormulaClass' sign='true'><text>1</text></item>
+<item name='$TITLE' sign='true'><text>Lookups\Alerts\Processed|lkp_Alerts_Processed</text></item>
+<item name='$Index' sign='true'><text/></item>
+<item name='$Formula' summary='true' sign='true'><formula compiled='true'>
+OgECAB4AAgAkMgIABgAAAAAAAAAFAAQARnJvbbQCAwACACgADQBEZWxpdmVyZWREYXRlAAUADQBE
+ZWxpdmVyZWREYXRlAAMAAgAcAAcAU3ViamVjdAAFAAcAU3ViamVjdAADAAUAMAArAAQAAgANAAcA
+CQAkMkRlbGl2ZXJlZERhdGVTdWJqZWN0JENvbmZsaWN0AAQABAAAAIIABQAEAEZvcm0BAAQATWVt
+bwoCBQAQAGdlQWxlcnRQcm9jZXNzZWQBAAMAWWVzAAoCHAIFAAcAU3ViamVjdAABABAAQ2xpY2sg
+dG8gY29uZmlybUcCHgEFAAcAU3ViamVjdAABAAwAVmVyaWZpY2F0aW9uRwIeARwCBAAcAgMABwAg
+ABoACUwxUzJTM1M0UzVTNlM3UzhTOVMxN1MxOFM=
+</formula></item>
+<item name='$Collation' summary='true'>
+<rawitemdata type='2'>
+MQADAABEGGYAAAACAAFmAAIADQCBZgAPAAcAJDJEZWxpdmVyZWREYXRlU3ViamVjdA==
+</rawitemdata></item>
+<item name='$ViewFormat' summary='true' sign='true'>
+<rawitemdata type='5'>
+AQADAAMAijgAAFZDAAACAAQALAAAAHgABQAACQABAAAAAAAAAAICAAAAVkMFAA0ABAAqAAAAiAAG
+AAAJAAAAAAAAAAAAAgIAAABWQwUABwAHAB4AAADwAAcAAAkAAAAAAAAAAAACAgAAACQyRnJvbSwA
+AgAeAAIAJDICAAYAAAAAAAAABQAEAEZyb220AgMABwAMAAUACTBTMEUARGVsaXZlcmVkRGF0ZURh
+dGUqAAIAKAANAERlbGl2ZXJlZERhdGUABQANAERlbGl2ZXJlZERhdGUAAwBTdWJqZWN0U3ViamVj
+dB4AAgAcAAcAU3ViamVjdAAFAAcAU3ViamVjdAADACYAAQAAAAEBAAkBAAAKAQEOCgAALwCtKwkB
+AQABAAAAAAAAAAAAV0MIAQAJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAAAAAAAAAAAAAAAA
+AFdDCQEACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AAAAAAAAAAAAAAAAAABXQwoBAAkAAAAA
+AAAAAAAAAAAAAAAAAAAEAAAAAAD//wAAAAAAAAAAAAAAAAAAQgAAAAAAAQD///8AAQD39/cAAQAA
+AAAAAAAAAAAAAAABAP///wABAP///wAAAAEAAAAAAAEAgICAAAEAAAAAAAAACAAAAAAAAQA=
+</rawitemdata></item>
+<item name='$Fonts' sign='true'><textlist><text>5</text><text>22</text><text
+>Georgia</text><text>6</text><text>22</text><text>Georgia</text><text>7</text><text
+>22</text><text>Georgia</text><text>8</text><text>22</text><text>Georgia</text><text
+>9</text><text>22</text><text>Georgia</text><text>10</text><text>22</text><text
+>Georgia</text></textlist></item>
+<item name='$Comment' sign='true'><text>iWatch V2.0.0</text></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item>
+<item name='$V5ACTIONS' sign='true'>
+<rawitemdata type='1'>
+i/8oAAEABRZHZW9yZ2lhAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL0cAQAAAAIAAQAAAAEAAAAA
+AAAABQAACQgAAgB5/2wAAQD///8AAQAAAAAAAQAAAAAAAQD///8AAQAfAAAAAAAAAAAAAwAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAD8/zoAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA
+AAAAAAAAvv8mAAAABQAAAJ0BAAALAAAAAAAAAENhdGVnb3JpX3plAAEATny+/ygAAAAFAAAAnQEA
+AA4AAAAAAAAAX0VkaXQgRG9jdW1lbnQCAAIKvv8oAAAABQAAAJ0BAAAOAAAAAAAAAFNlbmQgRG9j
+dV9tZW50AwADCr7/IgAAAAUAAACdAQAACAAAAAAAAABfRm9yd2FyZAQABAq+/ywAAAAFAAAAnQEA
+ABIAAAAAAAAAX01vdmUgVG8gRm9sZGVyLi4uBQA9fL7/LgAAAAUAAACdAQAAEwAAAAAAAABfUmVt
+b3ZlIEZyb20gRm9sZGVyAAYAPnw=
+</rawitemdata></item>
+<item name='$ACTIONS' sign='true'>
+<rawitemdata type='1'>
+vRwBAAAAAgABAAAAAQAAAAAAAACmAAAJCAACAL7/JgAAAAUAAACdAQAACwAAAAAAAABDYXRlZ29y
+aV96ZQABAE58vv8oAAAABQAAAJ0BAAAOAAAAAAAAAF9FZGl0IERvY3VtZW50AgACCr7/KAAAAAUA
+AACdAQAADgAAAAAAAABTZW5kIERvY3VfbWVudAMAAwq+/yIAAAAFAAAAnQEAAAgAAAAAAAAAX0Zv
+cndhcmQEAAQKvv8sAAAABQAAAJ0BAAASAAAAAAAAAF9Nb3ZlIFRvIEZvbGRlci4uLgUAPXy+/y4A
+AAAFAAAAnQEAABMAAAAAAAAAX1JlbW92ZSBGcm9tIEZvbGRlcnoGAD58
+</rawitemdata></item>
+<item name='$Flags'><text>Yw</text></item></note>
+

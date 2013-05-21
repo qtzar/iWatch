@@ -1,0 +1,12 @@
+<theme extends="blackberry">
+	<resource>
+		<content-type>text/css</content-type>
+		<href>blackberry.css</href>
+	</resource>
+	<control>
+		<property>
+			<name>pageIcon</name>
+			<value>/favicon.png</value>
+		</property>
+	</control>
+</theme>

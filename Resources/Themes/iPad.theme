@@ -1,0 +1,12 @@
+<theme extends="iphone">
+	<resource>
+		<content-type>text/css</content-type>
+		<href>iPad.css</href>
+	</resource>
+	<control>
+		<property>
+			<name>pageIcon</name>
+			<value>/favicon.png</value>
+		</property>
+	</control>
+</theme>

@@ -1,0 +1,16 @@
+<theme extends="oneuiv2.1_blue">
+	<resource>
+		<content-type>text/css</content-type>
+		<href>iwatch.css</href>
+	</resource>
+	<resource>
+		<content-type>text/css</content-type>
+		<href>CustomBranding.css</href>
+	</resource>
+	<control>
+		<property>
+			<name>pageIcon</name>
+			<value>/favicon.png</value>
+		</property>
+	</control>
+</theme>

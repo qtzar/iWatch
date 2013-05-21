@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" replicaid="85257818000B8E8F" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="1d2" sequence="14" unid="3CEEC3F9E4BD2C0E85257818000D0F1D">
+<created><datetime>20110113T212238,37-05</datetime></created>
+<modified><datetime dst="true">20110715T081818,35-04</datetime></modified>
+<revised><datetime dst="true">20110715T081818,34-04</datetime></revised>
+<lastaccessed><datetime dst="true">20110715T081818,35-04</datetime></lastaccessed>
+<addedtofile><datetime>20110113T212239,99-05</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Declan Sciolla-Lynch/O=Imagination</name></updatedby>
+<wassignedby><name>CN=Declan Sciolla-Lynch/O=Imagination</name></wassignedby>
+<item name="$Flags"><text>34567Cg~`</text></item>
+<item name="$Comment" sign="true"><text>iWatch v2.0.0</text></item>
+
+
+
+<item name="$FileNames" sign="true"><text>browser_blue.theme</text></item>
+<item name="$CSSFiles" sign="true"><textlist><text>iwatch.css</text><text>CustomBranding.css</text></textlist></item>
+<item name="$TITLE" sign="true"><text>browser_2_blue.theme</text></item>
+<item name="$DesignerVersion" sign="true"><text>8.5.3</text></item></note>

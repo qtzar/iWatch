@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+	<xp:panel styleClass="lotusHeader">
+		<xp:this.data>
+			<xp:dominoDocument var="itemDoc" action="openDocument" formName="frmNews" documentId="#{javascript:compositeData.docUNID}" />
+		</xp:this.data>
+		<xp:table width="100%" styleClass="lotus Table lotusLayout">
+			<xp:tr>
+				<xp:td rowspan="3" style="width:26px;" rendered="#{javascript:sessionScope.Moderator}">
+					<xp:link escape="true" id="link2" title="Approve News Item">
+						<xp:this.rendered><![CDATA[#{javascript:if(sessionScope.Moderator){
+	if(itemDoc.getItemValueString("niApproved")=="Yes"){
+		return false;
+	} else {
+		return true;
+	}
+}}]]></xp:this.rendered>
+						<xp:image id="image4" url="/accept.png" alt="Approve News Item" style="margin-top:5px;margin-bottom:5px" />
+						<xp:eventHandler event="onclick" submit="true" refreshMode="complete">
+							<xp:this.action><![CDATA[#{javascript:var realDoc:NotesDocument = itemDoc.getDocument();
+realDoc.replaceItemValue("niApproved","Yes");
+realDoc.save();
+var thisPage = context.getUrl().getAddress();
+var thisPage = context.getUrl().toString();
+context.redirectToPage(thisPage);}]]></xp:this.action>
+						</xp:eventHandler>
+					</xp:link>
+					<xp:link escape="true" id="link3" title="Delete News Item">
+						<xp:this.rendered><![CDATA[#{javascript:if(sessionScope.Moderator){
+	return true;
+} else {
+	return false;
+}}]]></xp:this.rendered>
+						<xp:image id="image5" url="/delete.png" alt="Delete News Item" style="margin-top:5px" />
+						<xp:eventHandler event="onclick" submit="true" refreshMode="complete">
+							<xp:this.action><![CDATA[#{javascript:var realDoc:NotesDocument = itemDoc.getDocument();
+realDoc.removePermanently(true);
+var thisPage = context.getUrl().getAddress();
+var thisPage = context.getUrl().toString();
+context.redirectToPage(thisPage);}]]></xp:this.action>
+						</xp:eventHandler>
+					</xp:link>
+				</xp:td>
+				<xp:td>
+					<h1 style="margin:0px;">
+						<xp:link escape="true" text="#{itemDoc.niTitle}" id="link1" target="_blank">
+							<xp:this.value><![CDATA[#{javascript:itemDoc.getItemValueString("niLink");}]]></xp:this.value>
+						</xp:link>
+					</h1>
+				</xp:td>
+			</xp:tr>
+			<tr>
+				<td>
+					<xp:panel id="itemMeta" styleClass="lotusMeta">
+						<xp:image url="/tag_blue.png" id="image3" style="margin-right:3px;">
+							<xp:this.rendered><![CDATA[#{javascript:if(param.containsKey("category")){
+	return false;
+} else {
+	return true;
+}}]]></xp:this.rendered>
+						</xp:image>
+						<xp:text escape="true" id="computedField4" value="#{itemDoc.niCategory}">
+							<xp:this.rendered><![CDATA[#{javascript:if(param.containsKey("category")){
+	return false;
+} else {
+	return true;
+}}]]></xp:this.rendered>
+						</xp:text>
+						<xp:image url="/newspaper.png" id="image1">
+							<xp:this.style><![CDATA[#{javascript:if(param.containsKey("category")){
+	return "margin-right:3px;";
+} else {
+	return "margin-right:3px;margin-left:10px;";
+}}]]></xp:this.style>
+						</xp:image>
+						<xp:text escape="true" id="computedField3" value="#{itemDoc.niSource}" />
+						<xp:image url="/calendar.png" id="image2" style="margin-right:3px;margin-left:10px;margin-bottom:3px;" />
+						<xp:text escape="true" id="computedField5" value="#{itemDoc.niDate}" style="margin-bottom:3px;">
+							<xp:this.converter>
+								<xp:convertDateTime type="date" />
+							</xp:this.converter>
+						</xp:text>
+						<xp:span id="toolbox" dojoType="dijit.layout.ContentPane" style="width:100px;display:inline">
+							<xp:this.dojoAttributes>
+								<xp:dojoAttribute name="addthis:url">
+									<xp:this.value><![CDATA[#{javascript:itemDoc.getItemValueString("niLink");}]]></xp:this.value>
+								</xp:dojoAttribute>
+								<xp:dojoAttribute name="addthis:title">
+									<xp:this.value><![CDATA[#{javascript:itemDoc.getItemValueString("niTitle");}]]></xp:this.value>
+								</xp:dojoAttribute>
+							</xp:this.dojoAttributes>
+							<xp:this.rendered><![CDATA[#{javascript:applicationScope.enableTwitter && sessionScope.Twitter}]]></xp:this.rendered>
+							<xp:link styleClass="addthis_button_twitter" />
+							<xp:link styleClass="addthis_button_facebook" />
+							<xp:link styleClass="addthis_button_compact" />
+						</xp:span>
+					</xp:panel>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<xp:panel styleClass="lotusDetails" style="margin-bottom:5px;">
+						<xp:text escape="true" id="computedField1" value="#{itemDoc.niText}" tagName="p" />
+					</xp:panel>
+				</td>
+			</tr>
+		</xp:table>
+	</xp:panel>
+	<xp:scriptBlock id="addthisEnableToolbox" type="text/javascript">
+		<xp:this.value><![CDATA[
+		var temp = "hello World";
+		addthis.toolbox("##{id:toolbox}");
+		]]></xp:this.value>
+		<xp:this.loaded><![CDATA[${javascript:applicationScope.enableTwitter && sessionScope.Twitter}]]></xp:this.loaded>
+	</xp:scriptBlock>
+</xp:view>

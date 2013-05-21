@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom" xmlns:xe="http://www.ibm.com/xsp/coreex">
+	<xp:panel styleClass="lotusFrame">
+		<xc:layout_Banner />
+		<xc:layout_TitleBar />
+		<xc:layout_PlaceBar />
+		<xp:panel styleClass="lotusMain">
+			<xc:layout_Sidebar_Config />
+			<xp:panel styleClass="lotusContent">
+				<xp:text escape="true" id="computedField1" value="Configuration Instructions" tagName="h2"></xp:text>
+				This is where the instructions for iWatch will be shown.
+			</xp:panel>
+		</xp:panel>
+		<xc:layout_Footer />
+	</xp:panel>
+</xp:view>

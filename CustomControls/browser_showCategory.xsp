@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom" xmlns:xe="http://www.ibm.com/xsp/coreex">
+	<xp:this.data>
+		<xp:dominoView var="alertsView" viewName="lkp_Items_Approved_Category" categoryFilter="#{javascript:param.category}" />
+	</xp:this.data>
+	<xp:panel styleClass="lotusFrame">
+		<xc:layout_Banner />
+		<xc:layout_TitleBar />
+		<xc:layout_PlaceBar />
+		<xp:panel styleClass="lotusMain">
+			<xc:layout_Sidebar />
+			<xp:panel styleClass="lotusContent">
+				<xp:panel styleClass="lotusMessage lotusInfo">
+					There are currently no alerts in this category.
+					<xp:this.rendered><![CDATA[#{javascript:var testValue = getComponent("alertRepeat");
+if (testValue.getRowCount() == 0 ){
+	return true;
+} else{
+	return false;
+}}]]></xp:this.rendered>
+				</xp:panel>
+				<xp:repeat id="alertRepeat" rows="20" value="#{alertsView}" var="alertVar" indexVar="alertIndx">
+					<xp:this.facets>
+						<xp:pager key="footer" layout="Previous Separator Group Separator Next" partialRefresh="true" id="pager2" for="alertRepeat" />
+					</xp:this.facets>
+					<xp:this.rendered><![CDATA[#{javascript:var testValue = getComponent("alertRepeat");
+if (testValue.getRowCount() == 0 ){
+	return false;
+} else{
+	return true;
+}}]]></xp:this.rendered>
+					<xc:browser_NewsItem docUNID="#{javascript:alertVar.getNoteID();}" />
+				</xp:repeat>
+			</xp:panel>
+		</xp:panel>
+		<xc:layout_Footer />
+	</xp:panel>
+</xp:view>

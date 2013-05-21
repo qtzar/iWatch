@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xe="http://www.ibm.com/xsp/coreex">
+	<xp:this.data>
+		<xp:dominoDocument var="itemDoc" action="openDocument"
+			formName="frmNews" documentId="#{javascript:compositeData.docUNID}" />
+	</xp:this.data>
+
+	<xe:djxmRoundRectList id="djxmRoundRectList1">
+		<xe:mLineItem id="mLineItem1">
+			<xe:this.title><![CDATA[#{javascript:@Left(itemDoc.getItemValueString("niTitle"),25) + "...";}]]></xe:this.title>
+			<xe:this.targetUrl><![CDATA[#{javascript:itemDoc.getItemValueString("niLink")}]]></xe:this.targetUrl>
+			<xp:text escape="true" id="computedField1"
+				value="#{itemDoc.niText}"
+				style="padding-left:3px;padding-right:3px" />
+			<xp:br />
+			<xp:text escape="true" id="computedField2"
+				value="#{itemDoc.niCategory}"
+				style="padding-left:3px;padding-right:3px" />
+			<xp:br />
+			<xp:text escape="true" id="computedField3"
+				value="#{itemDoc.niSource}"
+				style="padding-left:3px;padding-right:3px" />
+
+		</xe:mLineItem>
+
+	</xe:djxmRoundRectList>
+</xp:view>

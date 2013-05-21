@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xe="http://www.ibm.com/xsp/coreex"
+	xmlns:xc="http://www.ibm.com/xsp/custom">
+	<xp:this.data>
+		<xp:dominoView var="alertsView"
+			viewName="lkp_Items_Approved_Category"
+			categoryFilter="#{javascript:param.category}" />
+	</xp:this.data>
+
+	<xe:mApp id="mApp1" selectedPageId="Category">
+		<xe:mPage id="Category" resetContent="false">
+			<xe:djxmHeading id="djxmHeading1"
+				label="#{javascript:param.category}" back="Main">
+				<xe:this.href><![CDATA[#{javascript:var thisURL:XSPUrl = context.getUrl();
+return @LeftBack(thisURL,".nsf") + ".nsf/Home.xsp"}]]></xe:this.href>
+			</xe:djxmHeading>
+			<xp:repeat id="alertRepeat" rows="20" value="#{alertsView}"
+				var="alertVar" indexVar="alertIndx">
+				<xc:Android_NewsItem
+					docUNID="#{javascript:alertVar.getNoteID();}">
+				</xc:Android_NewsItem>
+			</xp:repeat>
+
+		</xe:mPage>
+	</xe:mApp>
+
+
+
+</xp:view>

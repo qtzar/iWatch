@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note class='view' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='85257818000B8E8F'>
+<noteinfo noteid='21a' unid='500943371FDA91B6852578180011BD10' sequence='20'>
+<created><datetime>20110113T221345,12-05</datetime></created>
+<modified><datetime>20110220T133315,61-05</datetime></modified>
+<revised><datetime>20110220T133315,60-05</datetime></revised>
+<lastaccessed><datetime dst='true'>20130322T102438,37-04</datetime></lastaccessed>
+<addedtofile><datetime>20110113T221346,33-05</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Declan Sciolla-Lynch/O=Imagination</name></updatedby>
+<wassignedby><name>CN=Declan Sciolla-Lynch/O=Imagination</name></wassignedby>
+<item name='$FormulaClass' sign='true'><text>1</text></item>
+<item name='$TITLE' sign='true'><text>Lookups\Items\Approved|lkp_Items_Approved</text></item>
+<item name='$Index' sign='true'><text/></item>
+<item name='$Formula' summary='true' sign='true'><formula compiled='true'>
+lgAFAEgARAAHAAYABwAIAAoABgAJAAQAbmlEYXRlbmlUaXRsZW5pU291cmNlbmlDYXRlZ29yeW5p
+VGV4dCRDb25mbGljdCRSRUYEAAQAAAA2AAUABABmb3JtAQAHAGZybU5ld3MACgIFAAoAbmlBcHBy
+b3ZlZAEAAwBZZXMACgIcAgMABwASAAwACUwxUzJTM1M0UzVT
+</formula></item>
+<item name='$Collation' summary='true'>
+<rawitemdata type='2'>
+EwABAABEAWYAAAAGAG5pRGF0ZQ==
+</rawitemdata></item>
+<item name='$ViewFormat' summary='true' sign='true'>
+<rawitemdata type='5'>
+AQAFAAUACAAAAFZDBQAGAAYAAAAAAIEAAQAACgAAAAAAAAAAAAICAAAAVkMAAAcABwAAAAAA5QAB
+AAAKAAAAAAAAAAAAAgIAAABWQwAACAAIAAAAAABQAAEAAAoAAAAAAAAAAAACAgAAAFZDAAAKAAoA
+AAAAAM0AAQAACgAAAAAAAAAAAAICAAAAVkMAAAYABgAAAAAAUAABAAAKAAAAAAAAAAAAAgIAAABu
+aURhdGVuaURhdGVuaVRpdGxlbmlUaXRsZW5pU291cmNlbmlTb3VyY2VuaUNhdGVnb3J5bmlDYXRl
+Z29yeW5pVGV4dG5pVGV4dCYAAQAAAAEBAAkBAAAKAQEOCgAAAQCtKwEAAQABAAAAAAAAAAAAV0MB
+AQAJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAAAAAAAAAAAAAAAAAFdDAQEACQAAAAAAAAAA
+AAAAAAAAAAAAAAQAAAAAAP//AAAAAAAAAAAAAAAAAABXQwEBAAkAAAAAAAAAAAAAAAAAAAAAAAAE
+AAAAAAD//wAAAAAAAAAAAAAAAAAAV0MBAQAJAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA//8AAAAA
+AAAAAAAAAAAAAFdDAQEACQAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAP//AAAAAAAAAAAAAAAAAABC
+AAAAAAABAP///wAFAP///wABAAAAAAAAAAAAAAAAAAEA////AAEA////AAAAAQAAAAAAAQAAAAAA
+AQAAAAAAAAAIAAAAAAABAA==
+</rawitemdata></item>
+<item name='$Comment' sign='true'><text>iWatch V2.0.0</text></item>
+<item name='$Flags'><text>Yw</text></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item></note>
+
